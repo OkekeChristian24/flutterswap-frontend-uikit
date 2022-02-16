@@ -9,7 +9,7 @@ interface LogoProps extends SvgProps {
 const Logo: React.FC<LogoProps> = ({ isDark, ...props }) => {
   const textColor = isDark ? "#FFFFFF" : "#000000";
   return (
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+<Svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="85.000000pt" height="20.000000pt" viewBox="0 0 2002.000000 425.000000"
  preserveAspectRatio="xMidYMid meet">
 
@@ -73,7 +73,7 @@ fill="#FB5230" stroke="none">
 612 -311 695 -329 692 -17 -2 -75 -127 -316 -678 -163 -372 -301 -686 -306
 -699 -9 -20 -49 69 -302 675 l-292 699 -126 3 c-106 2 -126 0 -123 -12z"/>
 </g>
-</svg>
+</Svg>
 
   );
 };
