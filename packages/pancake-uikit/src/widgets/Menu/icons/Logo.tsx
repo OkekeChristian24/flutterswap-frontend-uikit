@@ -7,14 +7,16 @@ interface LogoProps extends SvgProps {
 }
 
 const Logo: React.FC<LogoProps> = ({ isDark, ...props }) => {
-  const textColor = isDark ? "#FFFFFF" : "#000000";
+  const textColor = isDark ? "#FB5230" : "#FB5230";
   return (
 <Svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="85.000000pt" height="20.000000pt" viewBox="0 0 2002.000000 425.000000"
- preserveAspectRatio="xMidYMid meet">
+ width="81.000000pt" height="20.000000pt" viewBox="0 0 2002.000000 425.000000"
+ preserveAspectRatio="xMidYMid meet"
+ {...props}
+ >
 
 <g transform="translate(0.000000,425.000000) scale(0.100000,-0.100000)"
-fill="#FB5230" stroke="none">
+fill={textColor} stroke="none">
 <path d="M2010 2355 l0 -1335 240 0 240 0 0 1335 0 1335 -240 0 -240 0 0
 -1335z"/>
 <path d="M11245 3684 c-11 -2 -45 -9 -75 -15 -142 -28 -313 -148 -388 -271
